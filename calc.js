@@ -12,7 +12,7 @@ function reset(){
 }
 
 function getRandom(){
-    for(let i = 0;i >= 20;i++){
+    for(let i = 0;i <= 20;i++){
         console.log(i);
         if(Math.random() * 100 + 1 >= luck){
             if(luck > 25)
@@ -28,7 +28,6 @@ function getRandom(){
 }
 
 function submit(){
-    reset();
     pro = document.getElementById('probability').value;
     getRandom();
 }
