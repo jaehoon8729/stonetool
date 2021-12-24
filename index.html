@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+    <body>
+       <from>
+        시행할횟수는? <input type="text" id="probability" onchange="submit()">
+        <select>
+            <option value="legend">전설</option>
+            <option value="ancient " selected="selected">고대</option>
+        </select>
+        <button>start</button>
+       </from>
+       <div style="width: 600px; height: 300px;">
+            <!--차트가 그려질 부분-->
+            <canvas id="myChart"></canvas>
+       </div>
+       <div style="border: 1px black; width: 90%; height: 90%; background-color: #f5d682;">
+            <div>
+                <h1>최악의 돌</h1>
+                <div id='result'>
+                    OXOXOXOXOXOXOXOXO
+                </div>
+            </div>
+       </div>
+    </body>
+    <script src="chart.js"></script>
+    <script src="calc.js"></script>
+</html>
