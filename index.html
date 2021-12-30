@@ -6,12 +6,12 @@
     </head>
     <body>
        <from>
-        시행할횟수는? <input type="text" id="probability" onchange="submit()">
-        <select>
+        시행할횟수는? <input type="text" id="probability">
+        <select id="rank">
             <option value="legend">전설</option>
             <option value="ancient " selected="selected">고대</option>
         </select>
-        <button>start</button>
+        <button onclick="submit()">start</button>
        </from>
        <div style="width: 600px; height: 300px;">
             <!--차트가 그려질 부분-->
@@ -21,7 +21,6 @@
             <div>
                 <h1>최악의 돌</h1>
                 <div id='result'>
-                    OXOXOXOXOXOXOXOXO
                 </div>
             </div>
        </div>
